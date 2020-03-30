@@ -1,0 +1,10 @@
+.about {
+  div:nth-child(1) {
+    order: 2;
+    padding: 10px;
+  }
+
+  div:nth-child(2) {
+    order: 1;
+  }
+}

@@ -1,0 +1,17 @@
+//Defaults
+$black: #000000 !default;
+$white: #ffffff !default;
+
+$gray-10: lighten( $black, 10% ) !default;
+$gray-20: lighten( $black, 20% ) !default;
+$gray-30: lighten( $black, 30% ) !default;
+$gray-40: lighten( $black, 40% ) !default;
+$gray-50: lighten( $black, 50% ) !default;
+$gray-60: lighten( $black, 60% ) !default;
+$gray-70: lighten( $black, 70% ) !default;
+$gray-80: lighten( $black, 80% ) !default;
+$gray-90: lighten( $black, 90% ) !default;
+
+//Custom colors - replace here
+$primary: #1D85E8;
+$primary-text: #272727;
