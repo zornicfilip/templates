@@ -1,0 +1,29 @@
+.about {
+  div:nth-child(1) {
+    order: 1;
+    padding: 10px;
+  }
+
+  div:nth-child(2) {
+    order: 2;
+  }
+}
+
+//Gallery images and frames
+.about {
+  .img-container img:last-child {
+    position: absolute;
+    top: 88px;
+    border-radius: 50%;
+    width: 63%;
+    left: 83px;
+  }
+}
+
+.img-container img:last-child {
+  position: absolute;
+  top: 54px;
+  border-radius: 50%;
+  width: 63%;
+  left: 54px;
+}

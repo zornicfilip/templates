@@ -1,0 +1,58 @@
+.hero {
+  display: flex;
+  align-items: flex-start;
+
+  .title-box {
+    width: 100%;
+
+    .title-primary {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.nav {
+  background-color: rgba(255,255,255,0.3);
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          a{
+            text-decoration: none;
+            color: $white;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            &.active {
+              border-bottom: 2px solid $white;
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $primary-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-80;
+  border-bottom: 2px solid $gray-80;
+}
+
+.scroll {
+  background-color: $white;
+}
+
