@@ -1,0 +1,72 @@
+.nav {
+  background-color: rgba(255,255,255,0.3);
+  z-index: 5;
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          a{
+            text-decoration: none;
+            color: $white;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $black;
+            }
+
+            &.active {
+              border-bottom: 2px solid $white;
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $primary-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-80;
+  border-bottom: 2px solid $gray-80;
+}
+
+.scroll {
+  background-color: $white;
+}
+.hero {
+  overflow: hidden;
+  position: relative;
+  background: unset !important;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+  }
+}
+#myVideo {
+  position: absolute;
+  left: 50%; /* % of surrounding element */
+  top: 50%;
+  transform: translate(-50%, -50%); /* % of current element */
+}
