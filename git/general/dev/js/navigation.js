@@ -26,12 +26,12 @@ function theme2() {
 
 //Dropdown
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.querySelector(".dropdown div").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.dropdown-button')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {

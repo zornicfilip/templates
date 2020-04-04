@@ -1,6 +1,5 @@
 .nav {
-  background-color: rgba(255,255,255,0.3);
-  z-index: 5;
+  background-color: rgba(255,255,255, 0.2);
 
   @include respond-below(sm) {
     background-color: $white;
@@ -10,6 +9,12 @@
     &.main_list {
       ul{
         li{
+          color: $white;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
           a{
             text-decoration: none;
             color: $white;
@@ -22,12 +27,17 @@
 
             &.active {
               border-bottom: 2px solid $white;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;
+              }
             }
           }
         }
 
         &.menuLight {
           li {
+            color: $primary-text;
             a {
               color: $primary-text;
 
@@ -47,26 +57,41 @@
   border-bottom: 2px solid $gray-80;
 }
 
+.dropdown button {
+  color: $white;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
 .scroll {
   background-color: $white;
+
+  .dropdown button {
+    color: $black !important;
+  }
+
+  a, li, p {
+    color: $black !important;
+  }
 }
+
+.video-bg {
+  z-index: -1;
+}
+
 .hero {
+  height: 70vh;
   overflow: hidden;
-  position: relative;
   background: unset !important;
+  background-color: unset !important;
 
   h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    text-align: center;
+    transform: translate(-50%, -500%);
   }
 }
-#myVideo {
-  position: absolute;
-  left: 50%; /* % of surrounding element */
-  top: 50%;
-  transform: translate(-50%, -50%); /* % of current element */
-}
+

@@ -24,6 +24,31 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 900;
 }
 
+//Separator
+.separator {
+  border-right: 2px solid $primary-text;
+  height: 25px;
+
+  @include respond-below(sm) {
+    border-right: unset;
+    border-bottom: 2px solid $primary-text;
+    width: 100%;
+  }
+}
+
+.theme1, .theme2 {
+  .separator {
+    border-bottom: 2px solid $white;
+    width: 100%;
+
+    @include respond-below(sm) {
+      border-right: unset;
+      border-bottom: 2px solid $primary-text;
+      width: 100%;
+    }
+  }
+}
+
 //Dividers
 .divider{
   &-large {

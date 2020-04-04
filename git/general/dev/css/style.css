@@ -860,19 +860,17 @@ template {
   .wrapper-nav {
     padding: 0; } }
 
-/* Dropdown Button */
-.dropbtn {
+.dropdown-button {
   border: none;
   background: none;
-  cursor: pointer; }
+  cursor: pointer;
+  color: white; }
 
-/* Dropdown button on hover & focus */
 .dropbtn:focus, .dropbtn:focus {
   border-bottom: 1px solid #272727;
   outline: none;
   box-shadow: unset; }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block; }
@@ -880,11 +878,10 @@ template {
     .dropdown {
       top: -15px; } }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #F5F5F5;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
@@ -892,22 +889,19 @@ template {
     .dropdown-content {
       display: none;
       position: static;
-      background-color: #F5F5F5;
+      background-color: #ffffff;
       width: 100vw;
       box-shadow: unset;
       z-index: 1; } }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: #272727;
   text-decoration: none;
   display: block; }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd; }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block; }
 

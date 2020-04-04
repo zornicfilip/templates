@@ -300,10 +300,11 @@
 }
 
 //Dropdown
-.dropbtn {
+.dropdown-button {
   border: none;
   background: none;
   cursor: pointer;
+  color: white;
 }
 
 .dropbtn:focus, .dropbtn:focus {
@@ -324,7 +325,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: $secondary;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -332,7 +333,7 @@
   @include respond-below(sm) {
     display: none;
     position: static;
-    background-color: $secondary;
+    background-color: $white;
     width: 100vw;
     box-shadow: unset;
     z-index: 1;
