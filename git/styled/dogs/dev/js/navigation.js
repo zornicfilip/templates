@@ -29,11 +29,9 @@ function theme2() {
 
 window.onscroll = function() {
     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
-        console.log("Dole");
         document.getElementsByTagName("nav")[0].classList.add("scroll");
         document.getElementById("navList").classList.add("menuLight");
     } else {
-        console.log("Gore");
         document.getElementsByTagName("nav")[0].classList.remove("scroll");
         document.getElementById("navList").classList.remove("menuLight");
     }

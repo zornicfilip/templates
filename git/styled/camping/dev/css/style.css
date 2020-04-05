@@ -878,6 +878,8 @@ button {
   font-size: 16px;
   border: none;
   background: unset; }
+  .dropdown-button:hover {
+    cursor: pointer; }
 
 .dropdown {
   position: relative;

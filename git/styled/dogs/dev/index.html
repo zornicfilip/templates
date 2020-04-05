@@ -20,10 +20,38 @@
                         </div>
                         <div class="main_list" id="mainListDiv">
                             <ul id="navList">
-                                <li><a href="index.html" class="active">Home</a></li>
-                                <li><a href="subpage.html">About</a></li>
-                                <li><a href="subpage.html">Subpage</a></li>
-                                <li><a href="subpage.html">Subpage</a></li>
+                                <li>
+                                    <a target="_blank" href="/welcome.html" class="active">Welcome</a>
+                                </li>
+                                <li>
+                                    <a target="_self" href="/guestbook.html">Guestbook</a>
+                                </li>
+                                <li>Test123</li>
+                                <li class="separator"></li>
+                                <li>
+                                    <a target="_self" href="/contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a onclick="javascript:submenu('submenu_163'); return false;" href="#" >Submenu</a>
+                                </li>
+                                <li class="submenu_163" style="display: none;">
+                                    <a target="_self" href="/link_list.html" >Submenu Element 1</a>
+                                </li>
+                                <li>
+                                    <a target="_self" href="/link_list.html">Link list</a>
+                                </li>
+
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropdown-button">Dropdown</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -35,10 +63,51 @@
                         </button>
                     </div>
                     <div id="mySidenav" class="sidenav">
-                        <a href="index.html" class="active">Home</a>
-                        <a href="subpage.html">About</a>
-                        <a href="subpage.html">Subpage</a>
-                        <a href="subpage.html">Subpage</a>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="/welcome.html" class="active">Welcome</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/guestbook.html">Guestbook</a>
+                            </li>
+                            <li>Test123</li>
+                            <li>
+                                <a target="_self" href="/contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a onclick="javascript:submenu('submenu_163'); return false;" href="#" >Submenu</a>
+                            </li>
+                            <li class="submenu_163" style="display: none;">
+                                <a target="_self" href="/link_list.html" >Submenu Element 1</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li>
+                                <a target="_self" href="/link_list.html">Link list</a>
+                            </li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button">Dropdown</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button">Dropdown</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
                     <span style="font-size:30px;cursor:pointer;" id="nav-btn" onclick="openNav()">&#9776;</span>
                     <div class="logo">
@@ -49,57 +118,16 @@
             <div class="hero">
                 <div class="title-box">
                     <h1 class="title title-primary">Title text goes here</h1>
+                    <!--<video class="video-bg" poster="img/hero.png" autoplay muted loop>
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>-->
                 </div>
             </div>
         </header>
-        <div class="divider-medium"></div>
+        <div class="divider-large"></div>
         <section>
-            <div class="wrapper wrapper-70">
-                <h1 class="title title-secondary padding-l-1">About</h1>
-                <div class="grid grid-2x about">
-                    <div class="padding-3">
-                        <h3 class="title title-secondary"></h3>
-                        <p class="paragraph paragraph-primary padding-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                    </div>
-                    <div>
-                        <div class="img img-container">
-                            <img src="img/blank.png" class="img-frame" alt="image frame">
-                            <img src="img/about.png" alt="gallery1">
-                        </div>
-                    </div>
-                </div>
-                <div class="divider-large"></div>
-                <h1 class="title title-secondary padding-l-1">Gallery</h1>
-                <div class="divider-large"></div>
-                <div class="grid grid-3x gallery">
-                    <div class="img img-container">
-                        <img src="img/blank.png" class="img-frame" alt="image frame">
-                        <img src="img/gallery_1.png" alt="gallery1">
-                    </div>
-                    <div class="img img-container">
-                        <img src="img/blank.png" class="img-frame" alt="image frame">
-                        <img src="img/gallery_2.png" alt="gallery2">
-                    </div>
-                    <div class="img img-container">
-                        <img src="img/blank.png" class="img-frame" alt="image frame">
-                        <img src="img/gallery_3.png" alt="gallery3">
-                    </div>
-                    <div class="img img-container">
-                        <img src="img/blank.png" class="img-frame" alt="image frame">
-                        <img src="img/gallery_4.png" alt="gallery4">
-                    </div>
-                    <div class="img img-container">
-                        <img src="img/blank.png" class="img-frame" alt="image frame">
-                        <img src="img/gallery_5.png" alt="gallery5">
-                    </div>
-                    <div class="img img-container">
-                        <img src="img/blank.png" class="img-frame" alt="image frame">
-                        <img src="img/gallery_6.png" alt="gallery6">
-                    </div>
-                </div>
-            </div>
         </section>
-        <div class="divider-medium"></div>
+        <div class="divider-large"></div>
         <footer>
             <div class="footer-primary">
                 <div class="wrapper wrapper-70">

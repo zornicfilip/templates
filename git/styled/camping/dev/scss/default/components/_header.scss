@@ -317,6 +317,10 @@
   font-size: 16px;
   border: none;
   background: unset;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .dropdown {
