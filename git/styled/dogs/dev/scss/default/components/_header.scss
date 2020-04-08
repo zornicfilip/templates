@@ -64,6 +64,12 @@
   z-index: 5;
 }
 
+.main_list {
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+}
+
 .nav div.logo{
   width: 180px;
   height: 10px;
@@ -354,6 +360,7 @@
   text-decoration: none;
   display: block;
   border: none !important;
+  background-color: lighten($primary, 95%);
 }
 
 .dropdown-content a:hover {

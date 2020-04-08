@@ -2,7 +2,6 @@
   &-primary {
     background-color: $primary;
     padding: 20px 0;
-    border-top: 1px solid $secondary;
 
     .grid {
       grid-column-gap: 40px;
@@ -18,6 +17,13 @@
       }
     }
 
+    ul {
+      li {
+        a{
+          color: $white;
+        }
+      }
+    }
     img {
       @include respond-below(sm) {
         display: block;
@@ -43,17 +49,17 @@
   .column-list-item{
 
     a {
-      color: $white;
+      color: $primary;
       text-decoration: none;
       display: inline-block;
       padding: 5px;
 
       &:visited, &:active {
-        color: $white;
+        color: $primary;
       }
 
       &:hover {
-        color: darken($white, 50%);
+        color: darken($primary, 50%);
       }
     }
   }

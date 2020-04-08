@@ -678,6 +678,10 @@ button {
   background-color: #ffffff;
   z-index: 5; }
 
+@media (max-width: 767px) {
+  .main_list {
+    background-color: #ffffff; } }
+
 .nav div.logo {
   width: 180px;
   height: 10px;
@@ -906,7 +910,8 @@ button {
   color: black !important;
   text-decoration: none;
   display: block;
-  border: none !important; }
+  border: none !important;
+  background-color: white; }
 
 .dropdown-content a:hover {
   background-color: #f3f3f3;

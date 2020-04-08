@@ -1,11 +1,11 @@
-body {
-  background-color: #1A1A1A;
-
-  p {
-  color: $white;
-  }
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-text;
 }
 
-h1, h2, h3, h4, h5, h6 {
+p {
   color: $white;
+}
+
+body {
+  background-color: $primary;
 }

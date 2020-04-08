@@ -666,7 +666,7 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 70vh;
+  height: 80vh;
   background-color: #cccccc;
   font-family: 'Roboto', sans-serif;
   background-image: url("../img/hero.png") !important;
@@ -690,7 +690,12 @@ template {
   position: fixed;
   line-height: 65px;
   text-align: center;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  z-index: 5; }
+
+@media (max-width: 767px) {
+  .main_list {
+    background-color: #ffffff; } }
 
 .nav div.logo {
   width: 180px;
@@ -716,7 +721,6 @@ template {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  overflow-x: auto;
   list-style: none;
   margin: 0; }
   @media (max-width: 767px) {
@@ -842,15 +846,22 @@ template {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s; }
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s; }
+  .sidenav ul {
+    margin: 0;
+    padding: 0; }
+    .sidenav ul li {
+      margin: 0;
+      padding: 0;
+      color: #818181; }
+      .sidenav ul li a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s; }
+      .sidenav ul li button {
+        color: #818181; }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -881,6 +892,67 @@ template {
 @media (max-width: 767px) {
   .wrapper-nav {
     padding: 0; } }
+
+.dropdown-button {
+  font-size: 16px;
+  border: none;
+  background: unset; }
+  .dropdown-button:hover {
+    cursor: pointer; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  @media (max-width: 767px) {
+    .dropdown {
+      width: 100%;
+      background-color: #ffffff; } }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5; }
+  @media (max-width: 767px) {
+    .dropdown-content {
+      position: static;
+      width: 100vw;
+      background-color: #ffffff; } }
+
+.dropdown-content a {
+  color: black !important;
+  text-decoration: none;
+  display: block;
+  border: none !important; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.dropdown-content a:hover {
+  background-color: #e6e6e6; }
+
+.theme1 li, .theme2 li {
+  font-size: 25px; }
+
+.theme1 .dropdown, .theme2 .dropdown {
+  width: 100%; }
+
+.theme1 .dropdown-content, .theme2 .dropdown-content {
+  width: 100%;
+  background-color: #1D85E8; }
+
+.theme1 .sidenav ul li button, .theme2 .sidenav ul li button {
+  color: #818181 !important;
+  font-size: 25px; }
+
+.theme1 .dropdown-content a, .theme2 .dropdown-content a {
+  color: #818181 !important;
+  background-color: #4b9eed; }
+  .theme1 .dropdown-content a:hover, .theme2 .dropdown-content a:hover {
+    background-color: #62aaef;
+    border: none; }
 
 .footer-primary {
   background-color: #F5F5F5;

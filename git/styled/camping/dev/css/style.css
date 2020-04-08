@@ -678,6 +678,10 @@ button {
   background-color: #ffffff;
   z-index: 5; }
 
+@media (max-width: 767px) {
+  .main_list {
+    background-color: #ffffff; } }
+
 .nav div.logo {
   width: 180px;
   height: 10px;

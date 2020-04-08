@@ -1,38 +1,44 @@
-.hero {
-  display: flex;
-  align-items: flex-start;
-
-  .title-box {
-    width: 100%;
-
-    .title-primary {
-      width: 70%;
-      margin: 0 auto;
-    }
-  }
-}
-
 .nav {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255, 0.2);
+  transition: .1s all ease;
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
 
   div {
     &.main_list {
       ul{
         li{
+          color: $white;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
           a{
             text-decoration: none;
             color: $white;
             white-space: nowrap;
             border-bottom: 2px solid transparent;
 
+            @include respond-below(sm) {
+              color: $black;
+            }
+
             &.active {
               border-bottom: 2px solid $white;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;
+              }
             }
           }
         }
 
         &.menuLight {
           li {
+            color: $primary-text;
             a {
               color: $primary-text;
 
@@ -52,7 +58,39 @@
   border-bottom: 2px solid $gray-80;
 }
 
+.dropdown button {
+  color: $white;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
 .scroll {
   background-color: $white;
+
+  .dropdown button {
+    color: $black !important;
+  }
+
+  a, li, p {
+    color: $black !important;
+  }
+}
+
+.video-bg {
+  z-index: -1;
+}
+
+.hero {
+  height: 70vh;
+  overflow: hidden;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+  }
 }
 
