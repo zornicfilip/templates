@@ -1,0 +1,414 @@
+//Header
+.nav-item {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  overflow-x: scroll;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  float: right;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  a {
+    margin-left: 10px;
+    color: $primary-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+  background-color: $gray-80;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../img/hero.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.hero-subpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 25vh;
+  background-color: $gray-80;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../img/hero.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond-below(sm) {
+    padding-left: 0;
+    align-items: center !important;
+  }
+
+  .title-box-subpage {
+    width: 70%;
+    margin: 0 auto;
+    //padding-top: 50px;
+  }
+
+  h1 {
+    color: $white;
+  }
+}
+
+//Navigation
+.nav{
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
+  background-color: $white;
+  z-index: 5;
+}
+
+.main_list {
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+}
+
+.nav div.logo{
+  width: 180px;
+  height: 10px;
+  position: absolute;
+}
+
+.nav div.logo a{
+  text-decoration: none;
+  color: $primary;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.nav div.logo a:hover {
+  color: #c0c0c0;
+}
+
+.nav div.main_list{
+  width: 600px;
+  height: 65px;
+  float: right;
+}
+
+.nav div.main_list ul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  //overflow-x: auto;
+  list-style: none;
+  margin: 0;
+
+  @include respond-below(sm) {
+    justify-content: flex-start;
+  }
+}
+
+.nav div.main_list ul li{
+  white-space: nowrap;
+  margin-left: 20px;
+  @include respond-below(sm) {
+    margin-left: 0;
+  }
+}
+
+.nav div.main_list ul li a{
+  text-decoration: none;
+  color: $primary;
+  white-space: nowrap;
+}
+
+.nav div.main_list ul li a:hover{
+  color: lighten($primary, 50%);
+}
+
+.nav div.media_button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: none;
+}
+
+.nav div.media_button button.main_media_button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span{
+  width: 98%;
+  height: 1px;
+  display: block;
+  background-color: $primary;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+  transform: rotateY(180deg);
+  transition: all 0.5s;
+  background-color: $primary;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+  transform: rotateY(180deg);
+  transition: all 0.4s;
+  background-color: $primary;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+  transform: rotateY(180deg);
+  transition: all 0.3s;
+  background-color: $primary;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+  display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -20deg);
+}
+/* Medai qurey section */
+
+@media screen and (max-width:768px) {
+
+  .container{
+    margin: 0;
+  }
+
+  .nav div.logo{
+    margin-left: 15px;
+  }
+
+  .nav div.main_list{
+    width: 100%;
+    margin-top: 65px;
+    height: 0px;
+    overflow: hidden;
+  }
+
+  .nav div.show_list{
+    height: 100vh;
+  }
+
+  .nav div.main_list ul{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    top: 80px;
+    right: 0;
+    left: 0;
+    padding: 0;
+  }
+
+  .nav div.main_list ul li{
+    width: 100%;
+    height: 40px;
+    background-color: $white;
+  }
+
+  .nav div.main_list ul li a{
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    display: table;
+  }
+
+  .nav div.media_button{
+    display: block;
+  }
+}
+
+//Sidebar menu
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: $primary;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      color: #818181;
+
+      a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      button {
+        color: #818181;
+      }
+    }
+  }
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/*Show sidebar*/
+.show_sidebar {
+  width: 400px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.wrapper-nav {
+  @include respond-below(sm) {
+    padding: 0;
+  }
+}
+
+.dropdown-button {
+  //color: #818181;
+  font-size: 16px;
+  border: none;
+  background: unset;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  @include respond-below(sm) {
+    width: 100%;
+    background-color: $white;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+
+  @include respond-below(sm) {
+    position: static;
+    width: 100vw;
+    background-color: $white;
+  }
+}
+
+.dropdown-content a {
+  color: black !important;
+  //padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none !important;
+}
+
+.dropdown-content a:hover {
+  background-color: lighten($primary, 80%);
+  border: none !important;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.theme1, .theme2 {
+  li {
+    font-size: 25px;
+  }
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    background-color: $primary;
+  }
+
+  .sidenav ul li button {
+    color: #818181 !important;
+    font-size: 25px;
+  }
+
+  .dropdown-content {
+    a{
+      color: #818181 !important;
+      background-color: lighten($primary, 10%);
+
+      &:hover {
+        background-color: lighten($primary, 15%);
+        border: none;
+      }
+    }
+  }
+}
