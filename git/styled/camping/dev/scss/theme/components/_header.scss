@@ -84,14 +84,21 @@
 .hero {
   height: 70vh;
   overflow: hidden;
-  background: unset !important;
-  background-color: unset !important;
+  //background: unset !important;
+  //background-color: unset !important;
 
   h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -500%);
+  }
+
+  &-subpage {
+    h1 {
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 }
 

@@ -651,16 +651,27 @@ template {
   background-image: url("../img/hero.png") !important;
   background-repeat: no-repeat;
   background-size: cover; }
-  .hero-subpage {
-    height: 20vh !important;
-    align-items: flex-start !important;
-    padding-top: 63px;
-    padding-left: 246px; }
-    @media (max-width: 767px) {
-      .hero-subpage {
-        padding-left: 0;
-        align-items: center !important; } }
-  .hero h1 {
+
+.hero-subpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 20vh;
+  background-color: #cccccc;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../img/hero.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .hero-subpage {
+      padding-left: 0;
+      align-items: center !important; } }
+  .hero-subpage .title-box-subpage {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px; }
+  .hero-subpage h1 {
     color: #ffffff; }
 
 .nav {

@@ -29,23 +29,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 80vh;
+  height: 70vh;
+  background-color: $gray-80;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../img/hero.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.hero-subpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 20vh;
   background-color: $gray-80;
   font-family: 'Roboto', sans-serif;
   background-image: url("../img/hero.png") !important;
   background-repeat: no-repeat;
   background-size: cover;
 
-  &-subpage {
-    height: 20vh !important;
-    align-items: flex-start !important;
-    padding-top: 63px;
-    padding-left: 246px;
+  @include respond-below(sm) {
+    padding-left: 0;
+    align-items: center !important;
+  }
 
-    @include respond-below(sm) {
-      padding-left: 0;
-      align-items: center !important;
-    }
+  .title-box-subpage {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
   }
 
   h1 {
@@ -362,11 +374,13 @@
   border: none !important;
 }
 
+.dropdown-content a:hover {
+  background-color: lighten($primary, 80%);
+  border: none !important;
+}
+
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown-content a:hover {
-  background-color: $gray-90;
-}
 
 .theme1, .theme2 {
   li {
