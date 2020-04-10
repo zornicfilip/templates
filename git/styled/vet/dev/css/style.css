@@ -1142,10 +1142,19 @@ footer {
     margin: 0 auto; }
 
 .nav {
-  background-color: transparent; }
+  background-color: transparent;
+  background-image: url("../img/header.png") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 230px; }
+  @media (min-width: 1200px) {
+    .nav {
+      background-size: contain;
+      padding-bottom: 400px; } }
   @media (max-width: 767px) {
     .nav {
-      background-color: #ffffff; } }
+      background-color: #DAEDEB;
+      padding-bottom: 110px; } }
   .nav div.main_list ul li {
     color: #ffffff; }
     @media (max-width: 767px) {

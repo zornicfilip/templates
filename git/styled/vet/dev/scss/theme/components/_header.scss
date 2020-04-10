@@ -16,9 +16,19 @@
 }
 .nav {
   background-color: transparent;
+  background-image: url("../img/header.png") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 230px;
+
+  @include respond-above(lg){
+    background-size: contain;
+    padding-bottom: 400px;
+  }
 
   @include respond-below(sm) {
-    background-color: $white;
+    background-color: $primary;
+    padding-bottom: 110px;
   }
 
   div {
