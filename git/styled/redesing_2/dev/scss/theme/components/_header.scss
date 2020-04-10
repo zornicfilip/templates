@@ -1,0 +1,96 @@
+.nav {
+  background-color: rgba(255,255,255, 0.2);
+  transition: .1s all ease;
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          color: $white;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
+          a{
+            text-decoration: none;
+            color: $white;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $black;
+            }
+
+            &.active {
+              border-bottom: 2px solid $white;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;
+              }
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            color: $primary-text;
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $primary-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-80;
+  border-bottom: 2px solid $gray-80;
+}
+
+.dropdown button {
+  color: $white;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
+.scroll {
+  background-color: $white;
+
+  .dropdown button {
+    color: $black !important;
+  }
+
+  a, li, p {
+    color: $black !important;
+  }
+}
+
+.video-bg {
+  z-index: -1;
+}
+
+.hero {
+  align-items: flex-start;
+
+  .title-box {
+    width: 67%;
+    margin: 0 auto;
+    h1 {
+      color: $white;
+    }
+  }
+}
+
