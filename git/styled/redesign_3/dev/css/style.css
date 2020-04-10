@@ -1126,7 +1126,6 @@ body {
       color: black; }
 
 .hero {
-  align-items: flex-start;
   background-size: cover;
   background-position: top center;
   background-color: #0E174C;
@@ -1135,9 +1134,6 @@ body {
     .hero {
       background-size: cover;
       align-items: center; } }
-  .hero .title-box {
-    width: 70%;
-    margin: 0 auto; }
 
 .nav {
   background-color: transparent; }
@@ -1186,26 +1182,6 @@ body {
   .scroll a, .scroll li, .scroll p {
     color: #000000 !important; }
 
-/*
-.video-bg {
-  z-index: -1;
-}
-
-.hero {
-  height: 70vh;
-  overflow: hidden;
-  background: unset !important;
-  background-color: unset !important;
-
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -500%);
-  }
-}
-
-*/
 body {
   background-color: #0E174C; }
 

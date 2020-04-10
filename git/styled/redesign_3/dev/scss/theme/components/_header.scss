@@ -1,5 +1,4 @@
 .hero {
-  align-items: flex-start;
   background-size: cover;
   background-position: top center;
   background-color: $primary;
@@ -9,11 +8,6 @@
     background-size: cover;
     align-items: center;
 
-  }
-
-  .title-box {
-    width: 70%;
-    margin: 0 auto;
   }
 }
 .nav {
@@ -94,23 +88,3 @@
     color: $black !important;
   }
 }
-/*
-.video-bg {
-  z-index: -1;
-}
-
-.hero {
-  height: 70vh;
-  overflow: hidden;
-  background: unset !important;
-  background-color: unset !important;
-
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -500%);
-  }
-}
-
-*/
