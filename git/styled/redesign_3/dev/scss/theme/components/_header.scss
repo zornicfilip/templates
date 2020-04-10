@@ -1,0 +1,116 @@
+.hero {
+  align-items: flex-start;
+  background-size: cover;
+  background-position: top center;
+  background-color: $primary;
+  height: 95vh;
+
+  @include respond-below(sm) {
+    background-size: cover;
+    align-items: center;
+
+  }
+
+  .title-box {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.nav {
+  background-color: transparent;
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          color: $white;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
+          a{
+            text-decoration: none;
+            color: $white;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $black;
+            }
+
+            &.active {
+              border-bottom: 2px solid $white;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;
+              }
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            color: $primary-text;
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $primary-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-80;
+  border-bottom: 2px solid $gray-80;
+}
+
+.dropdown button {
+  color: $white;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
+.scroll {
+  background-color: $white;
+
+  .dropdown button {
+    color: $black !important;
+  }
+
+  a, li, p {
+    color: $black !important;
+  }
+}
+/*
+.video-bg {
+  z-index: -1;
+}
+
+.hero {
+  height: 70vh;
+  overflow: hidden;
+  background: unset !important;
+  background-color: unset !important;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+  }
+}
+
+*/
