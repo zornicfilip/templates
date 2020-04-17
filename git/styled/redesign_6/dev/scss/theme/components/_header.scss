@@ -1,0 +1,104 @@
+.nav {
+  background-color: transparent;
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          color: $primary-text;
+
+          @include respond-below(sm) {
+            color: $gray-20;
+          }
+
+          a{
+            text-decoration: none;
+            color: $primary-text;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $gray-20;
+            }
+
+            &.active {
+              border-bottom: 2px solid $gray-20;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $gray-20;
+              }
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            color: $primary-text;
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $primary-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $secondary;
+  border-bottom: 2px solid $secondary;
+}
+
+.dropdown button {
+  color: $primary-text;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
+.scroll {
+  background-color: $white;
+
+  .dropdown button {
+    color: $black !important;
+  }
+
+  a, li, p {
+    color: $black !important;
+  }
+}
+
+.video-bg {
+  z-index: -1;
+}
+
+.hero {
+  align-items: flex-start;
+  background-color: $primary;
+  background-size: contain;
+  background-position: top right;
+
+  .title-box {
+    width: 67%;
+    margin: 0 auto;
+    h1 {
+      color: $primary-text;
+    }
+  }
+
+  &-subpage {
+    background: unset;
+    background-color: $secondary;
+  }
+}
+
+
