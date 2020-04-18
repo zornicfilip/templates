@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body class="theme0">
+
+    <div class="wrapper wrapper-100">
+        <header>
+            <nav class="nav">
+                <div class="container wrapper wrapper-70 wrapper-nav">
+                    <div id="default-nav">
+                        <div class="logo">
+                            <a href="#">YourLogo</a>
+                        </div>
+                        <div class="main_list" id="mainListDiv">
+                            <ul id="navList">
+                                <li>
+                                    <a target="_blank" href="/welcome.html" class="active">Welcome</a>
+                                </li>
+                                <li>
+                                    <a target="_self" href="/guestbook.html">Guestbook</a>
+                                </li>
+                                <li>Test123</li>
+                                <li class="separator"></li>
+                                <li>
+                                    <a target="_self" href="/contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a onclick="javascript:submenu('submenu_163'); return false;" href="#" >Submenu</a>
+                                </li>
+                                <li class="submenu_163" style="display: none;">
+                                    <a target="_self" href="/link_list.html" >Submenu Element 1</a>
+                                </li>
+                                <li>
+                                    <a target="_self" href="/link_list.html">Link list</a>
+                                </li>
+
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropdown-button">Dropdown</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="media_button">
+                        <button class="main_media_button" id="mediaButton">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div id="mySidenav" class="sidenav">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="/welcome.html" class="active">Welcome</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/guestbook.html">Guestbook</a>
+                            </li>
+                            <li>Test123</li>
+                            <li>
+                                <a target="_self" href="/contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a onclick="javascript:submenu('submenu_163'); return false;" href="#" >Submenu</a>
+                            </li>
+                            <li class="submenu_163" style="display: none;">
+                                <a target="_self" href="/link_list.html" >Submenu Element 1</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li>
+                                <a target="_self" href="/link_list.html">Link list</a>
+                            </li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button">Dropdown</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button">Dropdown</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer;" id="nav-btn" onclick="openNav()">&#9776;</span>
+                    <div class="logo">
+                        <a href="#">YourLogo</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="title-box">
+                    <h1 class="title title-primary">Title text goes here</h1>
+                    <!--<video class="video-bg" poster="img/hero.png" autoplay muted loop>
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>-->
+                </div>
+            </div>
+        </header>
+        <div class="divider-large"></div>
+        <section>
+        </section>
+        <div class="divider-large"></div>
+        <footer>
+            <div class="footer-primary">
+                <div class="wrapper wrapper-70">
+                    <div class="grid grid-4x">
+                        <div>
+                            <img src="img/logo.png" class="logo-footer" alt="footer logo">
+                        </div>
+                        <div>
+                            <ul class="column-nav-item">
+                                <li class="column-list-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="column-list-item">
+                                    <a href="subpage.html">Subpage</a>
+                                </li>
+                                <li class="column-list-item">
+                                    <a href="">Menu item</a>
+                                </li>
+                                <li class="column-list-item">
+                                    <a href="">Menu item</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/group.png" class="width-100" alt="footer logo">
+                        </div>
+                        <div class="about-footer">
+                            <h5>About</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-secondary">
+                <div class="wrapper wrapper-60">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/navigation.js"></script>
+    </body>
+</html>
