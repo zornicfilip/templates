@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.about {
+  align-items: center;
+}
+
+.gallery {
+  justify-content: space-around;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  @include respond-below(md) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  }
+}
