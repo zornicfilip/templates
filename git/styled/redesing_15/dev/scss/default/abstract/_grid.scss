@@ -1,0 +1,327 @@
+.wrapper {
+  margin: 0 auto;
+
+  &-10 {
+    max-width: 10%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-20 {
+    max-width: 20%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-30 {
+    max-width: 30%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-40 {
+    max-width: 40%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-50 {
+    max-width: 50%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-60 {
+    max-width: 60%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-70 {
+    max-width: 70%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-80 {
+    max-width: 80%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-90 {
+    max-width: 90%;
+    @include respond-below(sm) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &-100 {
+    max-width: 100%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+
+  &-1x {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &-2x {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-3x {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-4x {
+    grid-template-columns: repeat(4, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-5x {
+    grid-template-columns: repeat(5, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-6x {
+    grid-template-columns: repeat(6, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-7x {
+    grid-template-columns: repeat(7, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-8x {
+    grid-template-columns: repeat(8, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-9x {
+    grid-template-columns: repeat(9, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  &-10x {
+    grid-template-columns: repeat(10, 1fr);
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+}
+
+//Paddings
+
+.padding {
+  //General
+  &-1 {
+    padding: 1rem;
+  }
+  &-2 {
+    padding: 2rem;
+  }
+  &-3 {
+    padding: 3rem;
+  }
+  &-4 {
+    padding: 4rem;
+  }
+  &-5 {
+    padding: 5rem;
+  }
+
+  //Left
+  &-l-1 {
+    padding-left: 1rem;
+  }
+  &-l-2 {
+    padding-left: 2rem;
+  }
+  &-l-3 {
+    padding-left: 3rem;
+  }
+  &-l-4 {
+    padding-left: 4rem;
+  }
+  &-l-5 {
+    padding-left: 5rem;
+  }
+
+  //Right
+  &-r-1 {
+    padding-right: 1rem;
+  }
+  &-r-2 {
+    padding-right: 2rem;
+  }
+  &-r-3 {
+    padding-right: 3rem;
+  }
+  &-r-4 {
+    padding-right: 4rem;
+  }
+  &-r-5 {
+    padding-right: 5rem;
+  }
+
+  //Top
+  &-t-1 {
+    padding-top: 1rem;
+  }
+  &-t-2 {
+    padding-top: 2rem;
+  }
+  &-t-3 {
+    padding-top: 3rem;
+  }
+  &-t-4 {
+    padding-top: 4rem;
+  }
+  &-t-5 {
+    padding-top: 5rem;
+  }
+
+  //Bottom
+  &-b-1 {
+    padding-bottom: 1rem;
+  }
+  &-b-2 {
+    padding-bottom: 2rem;
+  }
+  &-b-3 {
+    padding-bottom: 3rem;
+  }
+  &-b-4 {
+    padding-bottom: 4rem;
+  }
+  &-b-5 {
+    padding-bottom: 5rem;
+  }
+}
+
+//Margins
+.margin {
+  //General
+  &-1 {
+    margin: 1rem;
+  }
+  &-2 {
+    margin: 2rem;
+  }
+  &-3 {
+    margin: 3rem;
+  }
+  &-4 {
+    margin: 4rem;
+  }
+  &-5 {
+    margin: 5rem;
+  }
+
+  //Left
+  &-l-1 {
+    margin-left: 1rem;
+  }
+  &-l-2 {
+    margin-left: 2rem;
+  }
+  &-l-3 {
+    margin-left: 3rem;
+  }
+  &-l-4 {
+    margin-left: 4rem;
+  }
+  &-l-5 {
+    margin-left: 5rem;
+  }
+
+  //Right
+  &-r-1 {
+    margin-right: 1rem;
+  }
+  &-r-2 {
+    margin-right: 2rem;
+  }
+  &-r-3 {
+    margin-right: 3rem;
+  }
+  &-r-4 {
+    margin-right: 4rem;
+  }
+  &-r-5 {
+    margin-right: 5rem;
+  }
+
+  //Top
+  &-t-1 {
+    margin-top: 1rem;
+  }
+  &-t-2 {
+    margin-top: 2rem;
+  }
+  &-t-3 {
+    margin-top: 3rem;
+  }
+  &-t-4 {
+    margin-top: 4rem;
+  }
+  &-t-5 {
+    margin-top: 5rem;
+  }
+
+  //Bottom
+  &-b-1 {
+    margin-bottom: 1rem;
+  }
+  &-b-2 {
+    margin-bottom: 2rem;
+  }
+  &-b-3 {
+    margin-bottom: 3rem;
+  }
+  &-b-4 {
+    margin-bottom: 4rem;
+  }
+  &-b-5 {
+    margin-bottom: 5rem;
+  }
+}
