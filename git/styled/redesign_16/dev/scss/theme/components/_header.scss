@@ -1,0 +1,85 @@
+.nav {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #b9b9b9 95%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#b9b9b9 95%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#b9b9b9 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b9b9b9',GradientType=0 ); /* IE6-9 */
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          color: $primary-text;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
+          a{
+            text-decoration: none;
+            color: $primary-text;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $black;
+            }
+
+            &.active {
+              border-bottom: 2px solid $primary-text;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;
+              }
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            color: $primary-text;
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $primary-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-80;
+  border-bottom: 2px solid $gray-80;
+}
+
+.dropdown button {
+  color: $primary-text;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
+.scroll {
+  .dropdown button {
+    color: $primary-text !important;
+  }
+
+  a, li, p {
+    color: $primary-text !important;
+  }
+}
+
+.video-bg {
+  z-index: -1;
+}
+
