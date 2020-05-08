@@ -1054,7 +1054,6 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); } }
 
 footer {
-  padding-top: 230px;
   background-image: url("../img/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
