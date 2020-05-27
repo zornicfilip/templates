@@ -853,7 +853,7 @@ template {
   position: fixed;
   z-index: 1;
   top: 0;
-  background-color: #1D85E8;
+  background-color: #333333;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s; }

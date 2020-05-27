@@ -70,22 +70,6 @@
   }
 }
 
-.scroll {
-  background-color: $white;
-
-  .dropdown button {
-    color: $black !important;
-  }
-
-  a, li, p {
-    color: $black !important;
-  }
-}
-
-.video-bg {
-  z-index: -1;
-}
-
 .hero {
   background-color: $primary;
   background-size: cover;

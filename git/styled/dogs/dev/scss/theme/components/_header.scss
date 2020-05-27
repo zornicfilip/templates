@@ -1,20 +1,6 @@
-.hero {
-  align-items: flex-start;
-  background-size: contain;
-  background-color: $primary;
-
-  @include respond-below(sm) {
-    background-size: cover;
-    align-items: center;
-  }
-
-  .title-box {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
 .nav {
-  background-color: transparent;
+  background-color: rgba(255,255,255, 0.2);
+  transition: .1s all ease;
 
   @include respond-below(sm) {
     background-color: $white;
@@ -80,34 +66,15 @@
   }
 }
 
-.scroll {
-  background-color: $white;
-
-  .dropdown button {
-    color: $black !important;
-  }
-
-  a, li, p {
-    color: $black !important;
-  }
-}
-/*
-.video-bg {
-  z-index: -1;
-}
-
 .hero {
-  height: 70vh;
-  overflow: hidden;
-  background: unset !important;
-  background-color: unset !important;
+  align-items: flex-start;
 
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -500%);
+  .title-box {
+    width: 67%;
+    margin: 0 auto;
+    h1 {
+      color: $white;
+    }
   }
 }
 
-*/

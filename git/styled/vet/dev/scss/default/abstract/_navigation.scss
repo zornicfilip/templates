@@ -1,3 +1,15 @@
+.theme0 .scroll {
+  background-color: $white !important;
+
+  .dropdown button {
+    color: $black !important;
+  }
+
+  a, li, p {
+    color: $black !important;
+  }
+}
+
 .theme0 {
   #nav-btn {
     display: none;

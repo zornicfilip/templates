@@ -19,7 +19,7 @@
                             <a href="#">YourLogo</a>
                         </div>
                         <div class="main_list" id="mainListDiv">
-                            <ul>
+                            <ul id="navList">
                                 <li>
                                     <a target="_blank" href="/welcome.html" class="active">Welcome</a>
                                 </li>
@@ -27,6 +27,7 @@
                                     <a target="_self" href="/guestbook.html">Guestbook</a>
                                 </li>
                                 <li>Test123</li>
+                                <li class="separator"></li>
                                 <li>
                                     <a target="_self" href="/contact.html">Contact</a>
                                 </li>
@@ -36,20 +37,8 @@
                                 <li class="submenu_163" style="display: none;">
                                     <a target="_self" href="/link_list.html" >Submenu Element 1</a>
                                 </li>
-                                <li class="separator"></li>
                                 <li>
                                     <a target="_self" href="/link_list.html">Link list</a>
-                                </li>
-
-                                <li>
-                                    <div class="dropdown">
-                                        <button class="dropdown-button">Dropdown</button>
-                                        <div class="dropdown-content">
-                                            <a href="#">Link 1</a>
-                                            <a href="#">Link 2</a>
-                                            <a href="#">Link 3</a>
-                                        </div>
-                                    </div>
                                 </li>
 
                                 <li>
@@ -74,10 +63,51 @@
                         </button>
                     </div>
                     <div id="mySidenav" class="sidenav">
-                        <a href="index.html" class="active">Home</a>
-                        <a href="subpage.html">About</a>
-                        <a href="subpage.html">Subpage</a>
-                        <a href="subpage.html">Subpage</a>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="/welcome.html" class="active">Welcome</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/guestbook.html">Guestbook</a>
+                            </li>
+                            <li>Test123</li>
+                            <li>
+                                <a target="_self" href="/contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a onclick="javascript:submenu('submenu_163'); return false;" href="#" >Submenu</a>
+                            </li>
+                            <li class="submenu_163" style="display: none;">
+                                <a target="_self" href="/link_list.html" >Submenu Element 1</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li>
+                                <a target="_self" href="/link_list.html">Link list</a>
+                            </li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button">Dropdown</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button">Dropdown</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
                     <span style="font-size:30px;cursor:pointer;" id="nav-btn" onclick="openNav()">&#9776;</span>
                     <div class="logo">
@@ -88,13 +118,16 @@
             <div class="hero">
                 <div class="title-box">
                     <h1 class="title title-primary">Title text goes here</h1>
+                    <!--<video class="video-bg" poster="img/hero.png" autoplay muted loop>
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>-->
                 </div>
             </div>
         </header>
-        <div class="divider-medium"></div>
+        <div class="divider-large"></div>
         <section>
         </section>
-        <div class="divider-medium"></div>
+        <div class="divider-large"></div>
         <footer>
             <div class="footer-primary">
                 <div class="wrapper wrapper-70">

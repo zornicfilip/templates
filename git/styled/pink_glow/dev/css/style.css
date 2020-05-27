@@ -264,6 +264,13 @@
 .margin-b-5 {
   margin-bottom: 5rem; }
 
+.theme0 .scroll {
+  background-color: #ffffff !important; }
+  .theme0 .scroll .dropdown button {
+    color: #000000 !important; }
+  .theme0 .scroll a, .theme0 .scroll li, .theme0 .scroll p {
+    color: #000000 !important; }
+
 .theme0 #nav-btn {
   display: none; }
 
@@ -1143,15 +1150,6 @@ footer {
   @media (max-width: 767px) {
     .dropdown button {
       color: #000000; } }
-
-.scroll .dropdown button {
-  color: #4d4d4d !important; }
-
-.scroll a, .scroll li, .scroll p {
-  color: #4d4d4d !important; }
-
-.video-bg {
-  z-index: -1; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #4d4d4d; }

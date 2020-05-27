@@ -264,6 +264,13 @@
 .margin-b-5 {
   margin-bottom: 5rem; }
 
+.theme0 .scroll {
+  background-color: #ffffff !important; }
+  .theme0 .scroll .dropdown button {
+    color: #000000 !important; }
+  .theme0 .scroll a, .theme0 .scroll li, .theme0 .scroll p {
+    color: #000000 !important; }
+
 .theme0 #nav-btn {
   display: none; }
 
@@ -1135,16 +1142,6 @@ body {
   @media (max-width: 767px) {
     .dropdown button {
       color: #000000; } }
-
-.scroll {
-  background-color: #ffffff; }
-  .scroll .dropdown button {
-    color: #000000 !important; }
-  .scroll a, .scroll li, .scroll p {
-    color: #000000 !important; }
-
-.video-bg {
-  z-index: -1; }
 
 .hero {
   background-color: #FCEAE7;

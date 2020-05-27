@@ -90,35 +90,3 @@
     color: $black;
   }
 }
-
-.scroll {
-  background-color: $white;
-
-  .dropdown button {
-    color: $black !important;
-  }
-
-  a, li, p {
-    color: $black !important;
-  }
-}
-/*
-.video-bg {
-  z-index: -1;
-}
-
-.hero {
-  height: 70vh;
-  overflow: hidden;
-  background: unset !important;
-  background-color: unset !important;
-
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -500%);
-  }
-}
-
-*/

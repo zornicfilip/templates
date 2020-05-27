@@ -1,3 +1,13 @@
+.theme0 .scroll {
+  .dropdown button {
+    color: $primary-text;
+  }
+
+  a, li, p {
+    color: $primary-text;
+  }
+}
+
 .theme0 {
   #nav-btn {
     display: none;
