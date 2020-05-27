@@ -5,6 +5,7 @@ mediaButton.onclick = function () {
     mainListDiv.classList.toggle("show_list");
     mediaButton.classList.toggle("active");
 };
+
 //Sidebar
 const mySidenav = document.getElementById("mySidenav");
 
@@ -23,3 +24,15 @@ function theme2() {
     document.getElementsByTagName("body")[0].className = '';
     document.getElementsByTagName("body")[0].classList.add("theme2");
 }
+
+//Change color on scroll
+
+window.onscroll = function() {
+    if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+        document.getElementsByTagName("nav")[0].classList.add("scroll");
+        document.getElementById("navList").classList.add("menuLight");
+    } else {
+        document.getElementsByTagName("nav")[0].classList.remove("scroll");
+        document.getElementById("navList").classList.remove("menuLight");
+    }
+};
