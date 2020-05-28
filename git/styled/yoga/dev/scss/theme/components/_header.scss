@@ -1,6 +1,5 @@
 .nav {
-  background-color: rgba(255,255,255, 0.2);
-  transition: .1s all ease;
+  background-color: transparent;
 
   @include respond-below(sm) {
     background-color: $white;
@@ -10,7 +9,7 @@
     &.main_list {
       ul{
         li{
-          color: $white;
+          color: $primary-text;
 
           @include respond-below(sm) {
             color: $black;
@@ -18,7 +17,7 @@
 
           a{
             text-decoration: none;
-            color: $white;
+            color: $primary-text;
             white-space: nowrap;
             border-bottom: 2px solid transparent;
 
@@ -30,7 +29,7 @@
               border-bottom: 2px solid $white;
 
               @include respond-below(sm) {
-                border-bottom: 2px solid $black;
+                border-bottom: 2px solid $black;;
               }
             }
           }
@@ -43,7 +42,7 @@
               color: $primary-text;
 
               &.active {
-                border-bottom: 2px solid $primary-text;
+                border-bottom: 2px solid $black;
               }
             }
           }
@@ -54,12 +53,12 @@
 }
 
 .nav div.main_list ul li a:hover{
-  color: $gray-80;
-  border-bottom: 2px solid $gray-80;
+  color: $gray-10;
+  border-bottom: 2px solid $gray-10;
 }
 
 .dropdown button {
-  color: $white;
+  color: $primary-text;
 
   @include respond-below(sm) {
     color: $black;
@@ -68,14 +67,17 @@
 
 .hero {
   align-items: flex-start;
-  height: 90vh;
+  background-color: $white;
+  background-size: contain;
+  background-position: top right;
 
   .title-box {
-    //width: 67%;
-    margin: 0 auto 150px auto;
+    width: 67%;
+    margin: 0 auto;
     h1 {
-      color: $white;
+      color: $primary-text;
     }
   }
 }
+
 

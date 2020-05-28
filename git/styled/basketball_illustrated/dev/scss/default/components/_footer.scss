@@ -1,6 +1,6 @@
 .footer {
   &-primary {
-    background-color: $primary;
+   background-color: $secondary;
     padding: 20px 0;
 
     .grid {
@@ -17,13 +17,6 @@
       }
     }
 
-    ul {
-      li {
-        a{
-          color: $primary-text;
-        }
-      }
-    }
     img {
       @include respond-below(sm) {
         display: block;
@@ -33,7 +26,7 @@
   }
   &-secondary {
     height: 50px; //Temporary
-    background-color: $secondary;
+    background-color: $primary;
   }
 }
 
@@ -49,13 +42,13 @@
   .column-list-item{
 
     a {
-      color: $primary-text;
+      color: $primary;
       text-decoration: none;
       display: inline-block;
       padding: 5px;
 
       &:visited, &:active {
-        color: $primary-text;
+        color: $primary;
       }
 
       &:hover {

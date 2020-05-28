@@ -1,8 +1,16 @@
+footer {
+  padding-top: 200px;
+  background-image: url("../img/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .footer {
   &-primary {
-    background-color: $primary;
+    background-color: transparent;
     padding: 20px 0;
-
+    //border-top: 1px solid $secondary;
     .grid {
       grid-column-gap: 40px;
 
@@ -12,18 +20,13 @@
     }
 
     h1, h2, h3, h4, h5, h6, p, a {
+      color: $white;
+
       @include respond-below(sm) {
         text-align: center;
       }
     }
 
-    ul {
-      li {
-        a{
-          color: $primary-text;
-        }
-      }
-    }
     img {
       @include respond-below(sm) {
         display: block;
@@ -49,18 +52,24 @@
   .column-list-item{
 
     a {
-      color: $primary-text;
+      color: $white;
       text-decoration: none;
       display: inline-block;
       padding: 5px;
 
       &:visited, &:active {
-        color: $primary-text;
+        color: $white;
       }
 
       &:hover {
-        color: darken($primary, 50%);
+        color: darken($white, 50%);
       }
     }
+  }
+}
+
+.about-footer {
+  p {
+    color: $white;
   }
 }
