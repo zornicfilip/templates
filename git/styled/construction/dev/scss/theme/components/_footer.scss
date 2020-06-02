@@ -7,7 +7,7 @@
       grid-column-gap: 40px;
 
       @include respond-below(md) {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       }
     }
 
@@ -24,6 +24,7 @@
       }
     }
   }
+
   &-secondary {
     height: 50px; //Temporary
     background-color: $primary;

@@ -7,7 +7,7 @@
       grid-column-gap: 40px;
 
       @include respond-below(md) {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       }
     }
 
@@ -49,17 +49,17 @@
   .column-list-item{
 
     a {
-      color: $primary;
+      color: $white;
       text-decoration: none;
       display: inline-block;
       padding: 5px;
 
       &:visited, &:active {
-        color: $primary;
+        color: $white;
       }
 
       &:hover {
-        color: darken($primary, 50%);
+        color: darken($white, 50%);
       }
     }
   }

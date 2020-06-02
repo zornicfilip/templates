@@ -1067,7 +1067,7 @@ body {
     grid-column-gap: 40px; }
     @media (max-width: 991px) {
       .footer-primary .grid {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); } }
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
   @media (max-width: 767px) {
     .footer-primary h1, .footer-primary h2, .footer-primary h3, .footer-primary h4, .footer-primary h5, .footer-primary h6, .footer-primary p, .footer-primary a {
       text-align: center; } }

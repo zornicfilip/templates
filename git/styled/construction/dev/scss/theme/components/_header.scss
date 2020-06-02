@@ -71,6 +71,10 @@
   background-size: contain;
   background-position: top right;
 
+  @include respond-below(sm) {
+    background-position: center right;
+  }
+
   .title-box {
     width: 67%;
     margin: 0 auto;
