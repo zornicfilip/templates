@@ -1145,6 +1145,9 @@ body {
   background-color: #E8FEFF;
   background-size: contain;
   background-position: top right; }
+  @media (max-width: 767px) {
+    .hero {
+      background-position: bottom left 30px; } }
   .hero .title-box {
     width: 67%;
     margin: 0 auto; }
