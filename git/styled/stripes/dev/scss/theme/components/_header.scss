@@ -1,0 +1,110 @@
+.nav {
+  background-color: transparent;
+  transition: .1s all ease;
+
+ &>.container {
+   overflow: hidden;
+   background-color: $primary;
+   margin-top: 25px;
+   border-radius: 50px;
+   padding: 0 25px;
+
+   @include respond-below(sm) {
+     overflow: visible;
+     background-color: unset;
+     margin-top: unset;
+     border-radius: unset;
+     padding: unset;
+   }
+ }
+
+
+  @include respond-below(sm) {
+    background-color: $white;
+    //width: unset;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          color: $white;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
+          a{
+            text-decoration: none;
+            color: $white;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $black;
+            }
+
+            &.active {
+              border-bottom: 2px solid $white;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;
+              }
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            color: $primary-text;
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $primary-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-80;
+  border-bottom: 2px solid $gray-80;
+}
+
+.dropdown button {
+  color: $white;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
+.hero {
+  align-items: flex-start;
+
+  .title-box {
+    //width: 67%;
+    margin: 0 auto;
+    h1 {
+      color: $white;
+    }
+  }
+}
+
+.theme0 .scroll {
+  background-color: transparent !important;
+
+  .dropdown button {
+    color: $white !important;
+  }
+
+  a, li, p {
+    color: $white !important;
+  }
+}
+
