@@ -1,0 +1,86 @@
+.hero {
+  background-size: cover;
+  background-position: top center;
+  background-color: $white;
+  height: 95vh;
+
+  @include respond-below(sm) {
+    background-size: cover;
+    align-items: center;
+
+  }
+
+  .title-box {
+    width: 67%;
+    margin: 0 auto;
+    h1 {
+      color: $gray-20;
+    }
+  }
+}
+.nav {
+  background-color: transparent;
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          color: $gray-20;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
+          a{
+            text-decoration: none;
+            color: $gray-20;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $black;
+            }
+
+            &.active {
+              border-bottom: 2px solid $gray-20;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;
+              }
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            color: $gray-20;
+            a {
+              color: $gray-20;
+
+              &.active {
+                border-bottom: 2px solid $gray-20;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-20;
+  border-bottom: 2px solid $gray-20;
+}
+
+.dropdown button {
+  color: $gray-20;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
