@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.about {
+  align-items: center;
+}
+
+.gallery {
+  justify-content: space-around;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  @include respond-below(md) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  }
+}
+
+//Gallery images and frames
+.img-container img:last-child {
+  position: absolute;
+  top: 5px;
+  border-radius: 50%;
+  width: 90%;
+  left: 30px;
+}
