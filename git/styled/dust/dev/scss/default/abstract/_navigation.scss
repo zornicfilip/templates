@@ -1,0 +1,76 @@
+.theme0 .scroll {
+  background-color: $white !important;
+
+  .dropdown button {
+    color: $black !important;
+  }
+
+  a, li, p {
+    color: $black !important;
+  }
+}
+
+.theme0 {
+  #nav-btn {
+    display: none;
+  }
+
+  #mySidenav {
+    left: unset;
+    right: unset;
+  }
+}
+
+.theme1 {
+  #nav-btn {
+    display: block;
+    position: absolute;
+    left: 450px;
+
+    @include respond-below(sm) {
+      display: none;
+    }
+  }
+
+  #default-nav{
+    display: none;
+
+    @include respond-below(sm) {
+      display: block;
+    }
+  }
+
+  #mySidenav {
+    left: 0;
+    right: unset;
+  }
+}
+
+.theme2 {
+  #nav-btn {
+    display: block;
+    position: absolute;
+    right: 420px;
+
+    @include respond-below(sm) {
+      display: none;
+    }
+  }
+
+  .header-logo {
+    display: block;
+  }
+
+  #default-nav{
+    display: none;
+
+    @include respond-below(sm) {
+      display: block;
+    }
+  }
+
+  #mySidenav {
+    left: unset;
+    right: 0;
+  }
+}
