@@ -1,0 +1,97 @@
+.nav {
+  background-color: transparent;
+
+  @include respond-below(sm) {
+    background-color: $white;
+  }
+
+  div {
+    &.main_list {
+      ul{
+        li{
+          color: $primary-text;
+
+          @include respond-below(sm) {
+            color: $black;
+          }
+
+          &.separator {
+            border-right: 2px solid $primary-text;
+            height: 25px;
+          }
+
+          a{
+            text-decoration: none;
+            color: $primary-text;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+
+            @include respond-below(sm) {
+              color: $black;
+            }
+
+            &.active {
+              border-bottom: 2px solid $primary-text;
+
+              @include respond-below(sm) {
+                border-bottom: 2px solid $black;;
+              }
+            }
+          }
+        }
+
+        &.menuLight {
+          li {
+            color: $primary-text;
+            a {
+              color: $primary-text;
+
+              &.active {
+                border-bottom: 2px solid $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav div.main_list ul li a:hover{
+  color: $gray-10;
+  border-bottom: 2px solid $gray-10;
+}
+
+.dropdown button {
+  color: $primary-text;
+
+  @include respond-below(sm) {
+    color: $black;
+  }
+}
+
+.hero {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
+  .title-box {
+    width: 67%;
+    margin: 0 auto;
+    h1 {
+      text-align: center;
+      position: relative;
+      top: -145px;
+      color: $primary;
+    }
+  }
+
+
+  &-subpage {
+    background: unset;
+    background-color: $primary;
+  }
+}
+
+
