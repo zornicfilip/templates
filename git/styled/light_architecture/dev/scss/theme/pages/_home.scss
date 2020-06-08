@@ -1,0 +1,43 @@
+.about {
+  div:nth-child(1) {
+    order: 1;
+    padding: 10px;
+  }
+
+  div:nth-child(2) {
+    order: 2;
+  }
+}
+
+//Gallery images and frames
+.about {
+
+  div:nth-child(1){
+    order: 2;
+  }
+
+  div:nth-child(2){
+    order: 1;
+  }
+
+  .img-container {
+    order: 1;
+  }
+
+  .img-container img:last-child {
+    position: absolute;
+    top: 40px;
+    border-radius: 50%;
+    width: 60%;
+    left: 89px;
+    border: 3px solid #5F3716;
+  }
+}
+
+.img-container img:last-child {
+  position: absolute;
+  top: 5px;
+  border-radius: 50%;
+  width: 90%;
+  left: 30px;
+}
