@@ -629,12 +629,6 @@ template {
 [hidden] {
   display: none; }
 
-button {
-  background-color: unset;
-  border: none;
-  padding: 0;
-  margin: 0; }
-
 .nav-item {
   display: flex;
   padding: 0;
@@ -673,7 +667,7 @@ button {
   height: 20vh;
   background-color: #cccccc;
   font-family: 'Roboto', sans-serif;
-  background-image: url("../img/hero.png") !important;
+  background-image: url("../img/hero.png");
   background-repeat: no-repeat;
   background-size: cover; }
   @media (max-width: 767px) {
@@ -965,7 +959,7 @@ button {
     grid-column-gap: 40px; }
     @media (max-width: 991px) {
       .footer-primary .grid {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); } }
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
   @media (max-width: 767px) {
     .footer-primary h1, .footer-primary h2, .footer-primary h3, .footer-primary h4, .footer-primary h5, .footer-primary h6, .footer-primary p, .footer-primary a {
       text-align: center; } }
@@ -1012,24 +1006,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #272727;
   font-family: 'Roboto', sans-serif;
   font-weight: 900; }
-
-.separator {
-  border-right: 2px solid #272727;
-  height: 25px; }
-  @media (max-width: 767px) {
-    .separator {
-      border-right: unset;
-      border-bottom: 2px solid #272727;
-      width: 100%; } }
-
-.theme1 .separator, .theme2 .separator {
-  border-bottom: 2px solid #ffffff;
-  width: 100%; }
-  @media (max-width: 767px) {
-    .theme1 .separator, .theme2 .separator {
-      border-right: unset;
-      border-bottom: 2px solid #272727;
-      width: 100%; } }
 
 .divider-large {
   padding: 50px 0; }
@@ -1084,36 +1060,20 @@ body {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); } }
 
-.img-container img:last-child {
-  position: absolute;
-  top: 5px;
-  border-radius: 50%;
-  width: 90%;
-  left: 30px; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #000000; }
-
-p {
-  color: #000000; }
-
-body {
-  background-color: #F3FDFF; }
-
 .footer-primary {
-  background-color: #F3FDFF;
-  padding: 40px 0;
-  border-top: 1px solid #C8E4E7; }
+  background-color: #FF6248;
+  padding: 20px 0;
+  border-top: 1px solid #FFC94B; }
   .footer-primary .grid {
     grid-column-gap: 40px; }
     @media (max-width: 991px) {
       .footer-primary .grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
-  @media (max-width: 767px) {
-    .footer-primary h1, .footer-primary h2, .footer-primary h3, .footer-primary h4, .footer-primary h5, .footer-primary h6, .footer-primary p, .footer-primary a {
-      text-align: center; } }
-  .footer-primary ul li a {
-    color: #000000; }
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
+  .footer-primary h1, .footer-primary h2, .footer-primary h3, .footer-primary h4, .footer-primary h5, .footer-primary h6, .footer-primary p, .footer-primary a {
+    color: #ffffff; }
+    @media (max-width: 767px) {
+      .footer-primary h1, .footer-primary h2, .footer-primary h3, .footer-primary h4, .footer-primary h5, .footer-primary h6, .footer-primary p, .footer-primary a {
+        text-align: center; } }
   @media (max-width: 767px) {
     .footer-primary img {
       display: block;
@@ -1121,7 +1081,7 @@ body {
 
 .footer-secondary {
   height: 50px;
-  background-color: #C8E4E7; }
+  background-color: #FFC94B; }
 
 .column-nav-item {
   padding: 0;
@@ -1130,64 +1090,84 @@ body {
     .column-nav-item {
       text-align: center !important; } }
   .column-nav-item .column-list-item a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     padding: 5px; }
     .column-nav-item .column-list-item a:visited, .column-nav-item .column-list-item a:active {
-      color: #000000; }
+      color: #ffffff; }
     .column-nav-item .column-list-item a:hover {
-      color: #00cbf3; }
+      color: gray; }
+
+.about-footer p {
+  color: #ffffff; }
 
 .nav {
-  background-color: transparent;
-  transition: .1s all ease; }
+  background-color: transparent; }
   @media (max-width: 767px) {
     .nav {
       background-color: #ffffff; } }
   .nav div.main_list ul li {
-    color: #000; }
+    color: #565656; }
     @media (max-width: 767px) {
       .nav div.main_list ul li {
         color: #000000; } }
     .nav div.main_list ul li a {
       text-decoration: none;
-      color: #000;
+      color: #565656;
       white-space: nowrap;
       border-bottom: 2px solid transparent; }
       @media (max-width: 767px) {
         .nav div.main_list ul li a {
           color: #000000; } }
       .nav div.main_list ul li a.active {
-        border-bottom: 2px solid #000; }
+        border-bottom: 2px solid #ffffff; }
         @media (max-width: 767px) {
           .nav div.main_list ul li a.active {
-            border-bottom: 2px solid #000; } }
+            border-bottom: 2px solid #000000; } }
   .nav div.main_list ul.menuLight li {
-    color: #000; }
+    color: #565656; }
     .nav div.main_list ul.menuLight li a {
-      color: #000; }
+      color: #565656; }
       .nav div.main_list ul.menuLight li a.active {
-        border-bottom: 2px solid #000; }
+        border-bottom: 2px solid #000000; }
 
 .nav div.main_list ul li a:hover {
-  color: #cccccc;
-  border-bottom: 2px solid #cccccc; }
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a; }
 
 .dropdown button {
-  color: #000; }
+  color: #565656; }
   @media (max-width: 767px) {
     .dropdown button {
       color: #000000; } }
 
 .hero {
   align-items: flex-start;
-  background-position: top center;
+  background-color: #ffffff;
+  background-size: contain;
+  background-position: top 75px right 130px;
   height: 90vh; }
+  @media (max-width: 767px) {
+    .hero {
+      background-position: center center; } }
   .hero .title-box {
+    width: 67%;
     margin: 0 auto; }
     .hero .title-box h1 {
-      color: #000; }
+      color: #565656; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #565656; }
+
+p {
+  color: #ffffff; }
+
+body {
+  background-color: #ffffff !important; }
+
+body {
+  background-color: #FF6248; }
 
 .about div:nth-child(1) {
   order: 1;
@@ -1196,26 +1176,11 @@ body {
 .about div:nth-child(2) {
   order: 2; }
 
-.about div:nth-child(1) {
-  order: 2; }
-
-.about div:nth-child(2) {
-  order: 1; }
-
-.about .img-container {
-  order: 1; }
-
-.about .img-container img:last-child {
-  position: absolute;
-  top: 40px;
-  border-radius: 50%;
-  width: 60%;
-  left: 89px;
-  border: 3px solid #5F3716; }
+.img-container {
+  margin: 5px; }
 
 .img-container img:last-child {
   position: absolute;
-  top: 5px;
-  border-radius: 50%;
-  width: 90%;
-  left: 30px; }
+  top: -10px;
+  width: 95%;
+  left: -6px; }
